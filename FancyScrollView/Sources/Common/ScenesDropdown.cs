@@ -8,17 +8,20 @@ namespace FancyScrollView
     [RequireComponent(typeof(Dropdown))]
     public class ScenesDropdown : MonoBehaviour
     {
-        [SerializeField] int defaultScene = default;
-
-        Dropdown dropdown;
-
-        readonly string[] scenes = {
+        readonly string[] scenes =
+        {
             "01_Basic",
             "02_FocusOn",
             "03_InfiniteScroll",
             "04_Metaball",
             "05_Voronoi",
+            "06_LoopTabBar",
+            "07_ScrollRect",
         };
+
+        [SerializeField] int defaultScene = default;
+
+        Dropdown dropdown;
 
         void Awake() => dropdown = GetComponent<Dropdown>();
 
