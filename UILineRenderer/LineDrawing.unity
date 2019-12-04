@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 255648219}
-  DragStartPos: {x: 0, y: 0}
+  SceneDemoMode: 1
 --- !u!1 &629967120
 GameObject:
   m_ObjectHideFlags: 0
