@@ -1,9 +1,14 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System.Linq;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample03
 {
-    public class Example03 : MonoBehaviour
+    class Example03 : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
 
