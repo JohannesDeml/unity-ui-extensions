@@ -4,8 +4,6 @@
  * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
  */
 
-using UnityEngine;
-
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample08
 {
     public class FancyGridView : FancyGridView<ItemData, Context>
