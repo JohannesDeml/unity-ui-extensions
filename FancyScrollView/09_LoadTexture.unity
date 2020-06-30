@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -297,6 +298,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -430,7 +432,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4827733242866460906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b951920e0903644939cc8df4fa5de0f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cd67ba67fefed54eaeac893b62458ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scrollView: {fileID: 6905888369303192356}
@@ -630,15 +632,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6905888369303192355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9a70240d5de435e8ee58324cc164ab, type: 3}
+  m_Script: {fileID: 11500000, guid: f8fd8c61bc1ef9943baa0db9ae1b0695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellInterval: 0.25
-  scrollOffset: 0.25
+  cellInterval: 0.2
+  scrollOffset: 0.5
   loop: 0
   cellContainer: {fileID: 6905888370343872575}
   scroller: {fileID: 6905888369303192364}
-  cellPrefab: {fileID: 5330224153193493941, guid: 3db7a6f4063f8407f9f656cde0e83a3b,
+  cellPrefab: {fileID: 5330224153193493941, guid: 311d7bca3cdf8e841a40049a6b6fdae4,
     type: 3}
 --- !u!114 &6905888369303192364
 MonoBehaviour:
@@ -681,6 +683,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -794,7 +797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!223 &8075517298632828494
 Canvas:
   m_ObjectHideFlags: 0
