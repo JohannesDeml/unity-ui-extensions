@@ -1,10 +1,16 @@
-﻿using System;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System;
 using System.Collections.Generic;
 using UnityEngine.UI.Extensions.EasingCore;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample05
 {
-    public class ScrollView : FancyScrollView<ItemData, Context>
+    class ScrollView : FancyScrollView<ItemData, Context>
     {
         [SerializeField] Scroller scroller = default;
         [SerializeField] GameObject cellPrefab = default;
@@ -15,18 +21,17 @@ namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample05
 
         public int CellInstanceCount => Mathf.CeilToInt(1f / Mathf.Max(cellInterval, 1e-3f));
 
-        void Awake()
+        protected override void Initialize()
         {
-            Context.OnCellClicked = SelectCell;
-        }
+            base.Initialize();
 
-        void Start()
-        {
+            Context.OnCellClicked = SelectCell;
+
             scroller.OnValueChanged(UpdatePosition);
             scroller.OnSelectionChanged(UpdateSelection);
         }
 
-        void UpdateSelection(int index)
+        public void UpdateSelection(int index)
         {
             if (Context.SelectedIndex == index)
             {
@@ -68,7 +73,17 @@ namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample05
             }
 
             UpdateSelection(index);
-            scroller.ScrollTo(index, 0.35f, Ease.OutCubic);
+            ScrollTo(index, 0.35f, Ease.OutCubic);
+        }
+
+        public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null)
+        {
+            scroller.ScrollTo(position, duration, easing, onComplete);
+        }
+
+        public void JumpTo(int index)
+        {
+            scroller.JumpTo(index);
         }
 
         public Vector4[] GetCellState()

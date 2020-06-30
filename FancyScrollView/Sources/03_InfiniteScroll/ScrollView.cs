@@ -1,22 +1,27 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System.Collections.Generic;
 using UnityEngine.UI.Extensions.EasingCore;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample03
 {
-    public class ScrollView : FancyScrollView<ItemData, Context>
+    class ScrollView : FancyScrollView<ItemData, Context>
     {
         [SerializeField] Scroller scroller = default;
         [SerializeField] GameObject cellPrefab = default;
 
         protected override GameObject CellPrefab => cellPrefab;
 
-        void Awake()
+        protected override void Initialize()
         {
-            Context.OnCellClicked = SelectCell;
-        }
+            base.Initialize();
 
-        void Start()
-        {
+            Context.OnCellClicked = SelectCell;
+
             scroller.OnValueChanged(UpdatePosition);
             scroller.OnSelectionChanged(UpdateSelection);
         }

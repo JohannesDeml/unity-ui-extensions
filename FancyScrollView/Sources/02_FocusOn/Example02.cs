@@ -1,10 +1,14 @@
-﻿using System.Linq;
-using UnityEngine;
-using UnityEngine.UI;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System.Linq;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample02
 {
-    public class Example02 : MonoBehaviour
+    class Example02 : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
         [SerializeField] Button prevCellButton = default;
