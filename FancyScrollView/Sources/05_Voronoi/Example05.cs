@@ -1,10 +1,14 @@
-﻿using System.Linq;
-using UnityEngine;
-using UnityEngine.UI;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System.Linq;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample05
 {
-    public class Example05 : MonoBehaviour
+    class Example05 : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
         [SerializeField] Button prevCellButton = default;
@@ -22,7 +26,8 @@ namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample05
                 .ToList();
 
             scrollView.UpdateData(items);
-            scrollView.SelectCell(0);
+            scrollView.UpdateSelection(10);
+            scrollView.JumpTo(10);
         }
 
         void OnSelectionChanged(int index)

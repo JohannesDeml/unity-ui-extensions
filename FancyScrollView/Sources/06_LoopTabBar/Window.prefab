@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582904501497561846}
   - component: {fileID: 4365774167733249842}
-  - component: {fileID: 9030110384229391370}
+  - component: {fileID: 3435368341712602838}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2517073533780688607}
   m_CullTransparentMesh: 0
---- !u!114 &9030110384229391370
+--- !u!114 &3435368341712602838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,8 +63,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 60
@@ -72,13 +70,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Window
 --- !u!1 &8026611260721418881
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6748594459359164585}
   - component: {fileID: 8534278118123469741}
-  - component: {fileID: 7198334528009135428}
+  - component: {fileID: 123456784892985397}
   - component: {fileID: 2361120015274253186}
   - component: {fileID: 6766568021456841001}
   m_Layer: 5
@@ -127,7 +125,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8026611260721418881}
   m_CullTransparentMesh: 0
---- !u!114 &7198334528009135428
+--- !u!114 &123456784892985397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,8 +143,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0

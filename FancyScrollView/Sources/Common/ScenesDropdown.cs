@@ -1,12 +1,17 @@
-﻿using System.Linq;
-using UnityEngine;
-using UnityEngine.UI;
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+using System;
+using System.Linq;
 using UnityEngine.SceneManagement;
 
-namespace FancyScrollView
+namespace UnityEngine.UI.Extensions.Examples.FancyScrollView
 {
     [RequireComponent(typeof(Dropdown))]
-    public class ScenesDropdown : MonoBehaviour
+    class ScenesDropdown : MonoBehaviour
     {
         readonly string[] scenes =
         {
@@ -17,18 +22,15 @@ namespace FancyScrollView
             "05_Voronoi",
             "06_LoopTabBar",
             "07_ScrollRect",
+            "08_GridView",
+            "09_LoadTexture"
         };
-
-        [SerializeField] int defaultScene = default;
-
-        Dropdown dropdown;
-
-        void Awake() => dropdown = GetComponent<Dropdown>();
 
         void Start()
         {
+            var dropdown = GetComponent<Dropdown>();
             dropdown.AddOptions(scenes.Select(x => new Dropdown.OptionData(x)).ToList());
-            dropdown.value = defaultScene;
+            dropdown.value = Mathf.Max(0, Array.IndexOf(scenes, SceneManager.GetActiveScene().name));
             dropdown.onValueChanged.AddListener(value =>
                 SceneManager.LoadScene(scenes[value], LoadSceneMode.Single));
         }

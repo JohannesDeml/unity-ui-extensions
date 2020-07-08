@@ -1,8 +1,14 @@
+/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
 using System.Linq;
 
 namespace UnityEngine.UI.Extensions.Examples.FancyScrollViewExample06
 {
-    public class Example06 : MonoBehaviour
+    class Example06 : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
         [SerializeField] Text selectedItemInfo = default;

@@ -1,4 +1,10 @@
-﻿#ifndef GALLERY_VORONOI_HLSL_INCLUDED
+﻿/*
+ * FancyScrollView (https://github.com/setchi/FancyScrollView)
+ * Copyright (c) 2020 setchi
+ * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
+ */
+
+#ifndef GALLERY_VORONOI_HLSL_INCLUDED
 #define GALLERY_VORONOI_HLSL_INCLUDED
 
 #define CELL_COUNT  7 // CeilToInt(1f / cellInterval)
@@ -63,11 +69,11 @@ float4 voronoi(float2 st)
     dist = 1e+5;
 
     [unroll]
-    for (int i = 0; i < DATA_COUNT; i++)
+    for (int j = 0; j < DATA_COUNT; j++)
     {
-        if (cellIndex == i) continue;
+        if (cellIndex == j) continue;
 
-        float2 p = _CellState[i].xy;
+        float2 p = _CellState[j].xy;
         float d = dot(st - (cellPos + p) * 0.5, normalize(cellPos - p));
         dist = min(dist, d);
     }
