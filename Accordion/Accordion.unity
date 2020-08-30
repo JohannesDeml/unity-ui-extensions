@@ -1830,7 +1830,7 @@ GameObject:
   - component: {fileID: 970215677}
   - component: {fileID: 970215678}
   m_Layer: 5
-  m_Name: Accordion Group
+  m_Name: Accordion Group Item 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 1
+  m_AllowSwitchOff: 0
 --- !u!114 &970215678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,7 +2319,7 @@ GameObject:
   - component: {fileID: 1245933286}
   - component: {fileID: 1245933287}
   m_Layer: 5
-  m_Name: Accordion Group
+  m_Name: Accordion Group Item 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2357,7 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 1
+  m_AllowSwitchOff: 0
 --- !u!114 &1245933287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2664,7 +2664,7 @@ GameObject:
   - component: {fileID: 1316251137}
   - component: {fileID: 1316251136}
   m_Layer: 5
-  m_Name: Collection of individual Acordions
+  m_Name: Collection of individual Accordions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2727,7 +2727,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 1
+  m_AllowSwitchOff: 0
 --- !u!1 &1411361342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,7 +3324,7 @@ GameObject:
   - component: {fileID: 1733941102}
   - component: {fileID: 1733941103}
   m_Layer: 5
-  m_Name: Accordion Group
+  m_Name: Accordion Group Item 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3362,7 +3362,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 1
+  m_AllowSwitchOff: 0
 --- !u!114 &1733941103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3612,7 +3612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collection of individual Acordions
+  m_Text: Collection of individual Accordions
 --- !u!222 &1976886403
 CanvasRenderer:
   m_ObjectHideFlags: 0
