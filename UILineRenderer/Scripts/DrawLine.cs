@@ -7,7 +7,7 @@ Script has several operation modes:
 In this mode the Drag events are used to drag a line between two points, when the next drag occurs the line continues
 
 2: Click and Draw
-In this mode, each click starts a new line with the new line followng the cursor until the next click. Pressing Escape or Right-Clicking stops drawing.
+In this mode, each click starts a new line with the new line following the cursor until the next click. Pressing Escape or Right-Clicking stops drawing.
 The next click will continue drawing the line (to create separate lines, you will need to update to using segments rather than just points
 
 3: Follow
