@@ -449,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 2}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &277023224
@@ -589,7 +589,6 @@ GameObject:
   - component: {fileID: 430487566}
   - component: {fileID: 430487565}
   - component: {fileID: 430487564}
-  - component: {fileID: 430487563}
   - component: {fileID: 430487562}
   m_Layer: 5
   m_Name: Vertical Magnetic Scroll View
@@ -613,10 +612,10 @@ RectTransform:
   m_Father: {fileID: 403965916}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23700002, y: 0.30900002}
-  m_AnchorMax: {x: 0.8186776, y: 0.6366519}
-  m_AnchoredPosition: {x: -457.8, y: 9}
-  m_SizeDelta: {x: -492.67108, y: 299.44006}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -265}
+  m_SizeDelta: {x: 187.94974, y: 453.82727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430487562
 MonoBehaviour:
@@ -632,69 +631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitByUser: 0
   pivot: {fileID: 666709564}
-  content: {fileID: 640934090}
   maxSpeedForMagnetic: 10
   indexStart: 0
   timeForDeceleration: 0.05
-  scrollRect: {fileID: 430487564}
---- !u!114 &430487563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430487560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 430487562}
-          m_MethodName: Drag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 430487562}
-          m_MethodName: EndDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 7
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 430487562}
-          m_MethodName: Scroll
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &430487564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1832,7 +1771,6 @@ GameObject:
   - component: {fileID: 1883705457}
   - component: {fileID: 1883705456}
   - component: {fileID: 1883705455}
-  - component: {fileID: 1883705458}
   - component: {fileID: 1883705454}
   m_Layer: 5
   m_Name: Horizontal Magnetic Scroll View
@@ -1856,10 +1794,10 @@ RectTransform:
   m_Father: {fileID: 403965916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23700002, y: 0.30900002}
-  m_AnchorMax: {x: 0.8186776, y: 0.6366519}
-  m_AnchoredPosition: {x: 189, y: 14.402}
-  m_SizeDelta: {x: 0.7605591, y: 2.1677856}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -354, y: -265.098}
+  m_SizeDelta: {x: 668.76056, y: 175.16779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883705454
 MonoBehaviour:
@@ -1875,11 +1813,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitByUser: 0
   pivot: {fileID: 1024359979}
-  content: {fileID: 277023223}
   maxSpeedForMagnetic: 10
   indexStart: 0
   timeForDeceleration: 0.05
-  scrollRect: {fileID: 1883705455}
 --- !u!114 &1883705455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,64 +1883,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883705452}
   m_CullTransparentMesh: 0
---- !u!114 &1883705458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883705452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1883705454}
-          m_MethodName: Drag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1883705454}
-          m_MethodName: EndDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 7
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1883705454}
-          m_MethodName: Scroll
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1885352241
 GameObject:
   m_ObjectHideFlags: 0
