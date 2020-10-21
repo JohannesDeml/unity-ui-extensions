@@ -17,6 +17,6 @@ public class KnobManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KnobValue.text = Knob.knobValue.ToString();
+        KnobValue.text = Knob.KnobValue.ToString();
     }
 }
