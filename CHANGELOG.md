@@ -4,24 +4,20 @@ All notable changes to this examples project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
-## 2019.4 (v2.2) - 2020-07-09
+## 2019.5 (v2.3) - 2020-10-31
 
-Here we write upgrading notes for brands. It's a team effort to make them as
-straightforward as possible.
+Since the move to UPM, the team have been able to react quicker and push out fixes a lot easier, without affecting previous installation (whilst still adhering to Unity's backwards compatibility pattern).  So it is with great news we announce this new release, faster that ever :D  (and thanks to UPM, easier to upgrade than ever).
+Be sure to also check out the "Examples" option in the Package Manager window to import the samples to your project.
 
 ### Added
 
-- New UPM deployment for Unity 2019, 2018 will still need to use the asset packages due to Unity compatibility issues.
-- Updated the project to the new Unity packaging guidelines, including separating out the examples to a separate package.
-- Many line drawing updates, including the ability to draw using a mouse (check the examples)
-- New Unity Card UI controls thanks to @RyanslikeSoCool
+- New UI Knob example
+- New Magnetic Infinite Scroll example
+- New Accordion example
 
 ### Changed
 
-- Scroll Snaps (HSS/VSS) now have a "Hard Swipe" feature to restrict movement to a single page for each swipe
-- Scroll Snaps have also been updated to work better with the UIInfiniteScroll control
-- Update to the Fancy Scroll controls with even more added fanciness
-- Several updates to adopt newer Unity standards in the controls to ensure full forwards and backwards compatibility  
+- Drop down scene updated with programmatic examples
 
 ### Deprecated
 
@@ -29,21 +25,9 @@ None
 
 ### Fixed
 
-- Mouse position use updated in
-    * RadialSlider
-    * ColorSampler
-    * TiltWindow
-- Check compiler warnings (#197)
-- Line Renderer click to add lines (#183)
-- ScrollSnap Swiping options - hard fast swipe (#176)
-- Shader Loading issue / UIParticleSystem (#229)
-- Issue where Menu Prefabs would be disabled instead of their Clones (#210)
-- Check ScrollSnapBase update (#265)
-- UIInfiniteScroller support for VSS updated and fixes
-- Fix to allow radial slider to start from positions other than left
-- Fix UI Particles: Texture sheet animation + Random row(#256)
-- Fix for wandering ScrollSnap controls due to Local Positioning drift
-- Divide By Zero fix for Gradient (#58)
+None
+
+> Although note, to use the new Unity Input system, you will need to update the Input System Modules on the "Event System" object.  Unity have provided a button for this.
 
 ### Removed
 
